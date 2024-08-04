@@ -9,14 +9,14 @@ Cloudflare Tunnel を管理している Terraform のコードが管理されて
 ```plain
 -- README.md
 -- environments/
-   -- <env>/
+   -- ENVIRONMENT/
       -- main.tf
       -- provider.tf
       -- variables.tf
       -- versions.tf
    -- ...
 -- modules/
-   -- <module>
+   -- MODULE
       -- .terraform-docs.yml
       -- header.md
       -- main.tf
@@ -32,7 +32,7 @@ Cloudflare Tunnel を管理している Terraform のコードが管理されて
 
 モジュールを作る場合、以下のファイルを作成する必要があります。
 
-- `modules/<module>/header.md`: ヘッダーに表示する情報
+- `modules/$MODULE/header.md`: ヘッダーに表示する情報
 
 ```markdown
 # Title
@@ -40,7 +40,7 @@ Cloudflare Tunnel を管理している Terraform のコードが管理されて
 This module is ...
 ```
 
-- `modules/<module>/.terraform-docs.yml`: ドキュメントの設定ファイル
+- `modules/$MODULE/.terraform-docs.yml`: ドキュメントの設定ファイル
 
 ```yaml
 formatter: markdown table
@@ -59,5 +59,5 @@ output:
 以下のコマンドでドキュメントを生成できます。
 
 ```bash
-terraform-docs modules/<module>/
+terraform-docs modules/$MODULE
 ```
