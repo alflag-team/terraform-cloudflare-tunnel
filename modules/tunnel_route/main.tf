@@ -1,4 +1,4 @@
-resource "cloudflare_zero_trust_tunnel_cloudflared_route" "main" {
+resource "cloudflare_tunnel_route" "main" {
   account_id         = var.account_id
   tunnel_id          = var.tunnel_id
   network            = var.network

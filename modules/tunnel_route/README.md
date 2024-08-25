@@ -25,7 +25,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_zero_trust_tunnel_cloudflared_route.main](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zero_trust_tunnel_cloudflared_route) | resource |
+| [cloudflare_tunnel_route.main](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/tunnel_route) | resource |
 
 ## Inputs
 
