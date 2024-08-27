@@ -4,6 +4,7 @@ module "gateway-prod-1" {
   account_id = var.cloudflare_account_id
   name       = "gateway-prod-1"
   secret     = var.secret
+  config_src = "cloudflare"
 }
 
 module "tunnel_virtual_network__prod-1" {
