@@ -9,3 +9,8 @@ variable "name" {
 variable "secret" {
   type = string
 }
+
+variable "config_src" {
+  type    = string
+  default = "local"
+}
